@@ -1,22 +1,13 @@
-* .navbar
+.navbar
 
 {
-  margin: 0;
-  padding: 0;
+ 
   box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-}
-
-/* Navbar styles */
-.navbar {
   display: flex;
   align-items: center;
   justify-content: space-evenly ;
   background-color: #d6b4cc;
-  padding: 40px 20px;
+  padding: 10px 10px;
   position: fixed;
   bottom: 0; 
   left: 0; 

@@ -1,0 +1,50 @@
+.card {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  height: 100vh;
+  background-color: #493939;
+  position: relative;
+  border-radius: 10px;
+  border: paleturquoise;
+  border: 3px;
+  position: relative;
+}
+svg.card__bookmark {
+  position: absolute;
+  top: -10px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+p.card__question {
+  font-size: large;
+
+  text-align: center;
+}
+
+p.card__solution {
+  color: gray;
+  font-weight: 500;
+  text-align: center;
+}
+
+p.category {
+  font-weight: 500;
+  font-size: smaller;
+  background-color: #e0e0e0;
+  border: 2px solid yellow;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+div.card__tag {
+  display: flex;
+  align-self: start;
+  gap: 10px;
+}
