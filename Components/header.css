@@ -1,8 +1,8 @@
-.header {
+header {
   background-color: #f190d9;
-  color: rgb(0, 0, 0);
-  padding: 15px;
+  color: rgb(250, 250, 250);
   text-align: center;
-  position: relative;
-  padding: 1rem 2rem;
+  margin: 4px;
+  text-transform: uppercase;
+  padding-block: 0.3px;
 }
