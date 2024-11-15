@@ -1,17 +1,18 @@
-console.clear();
+document.addEventListener("DOMContentLoaded", () => {
+  const bookmarkButtons = document.querySelectorAll(".bookmark");
 
-const bookmark = document.querySelector('[data-js="card__bookmark"]');
+  bookmarkButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      button.classList.toggle("bookmark--active");
 
-bookmark.addEventListener("click", () => {
-  bookmark.classList.toggle("card__bookmark--selected");
-});
-
-const showButton = document.querySelector('[data-js="button"]');
-const solution = document.querySelector('[data-js="solution"]');
-
-showButton.addEventListener("click", () => {
-  solution.toggleAttribute("hidden");
-  showButton.innerText = solution.hasAttribute("hidden")
-    ? "Show answer"
-    : "Hide answer";
+      const svg = button.querySelector("svg");
+      if (button.classList.contains("bookmark--active")) {
+        svg.setAttribute("fill", "white");
+        svg.setAttribute("stroke", "white");
+      } else {
+        svg.setAttribute("fill", "rgb(255, 115, 64)");
+        svg.setAttribute("stroke", "rgb(255, 115, 64)");
+      }
+    });
+  });
 });
