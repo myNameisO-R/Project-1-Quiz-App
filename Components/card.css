@@ -11,7 +11,7 @@
   border: 3px;
   margin: 20px auto;
 }
-svg.card__bookmark {
+.card__bookmark {
   position: absolute;
   top: -10px;
   right: 5px;
