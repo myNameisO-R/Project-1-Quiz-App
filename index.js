@@ -15,3 +15,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+function toggleAnswer(event) {
+  const answerDiv = event.target.nextElementsSibling;
+  const isHidden = answerDiv.classList.togglt("hidden");
+
+  if (isHidden) {
+    event.target.textcontent = "show Answer";
+  } else {
+    event.target.textContent = "Hide Answer";
+  }
+}
