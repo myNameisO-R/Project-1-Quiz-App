@@ -1,36 +1,70 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>My Personal Website</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="profile.js" defer></script>
+    <link rel="stylesheet" href="Components/styles.css" />
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: center;
+      }
+    </style>
   </head>
-  <body>
+  <body class="personal-profile-body">
     <header>
       <h1>Welcome to My Personal Website</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+      <nav class="personal-profile">
+        <ul class="personal-profile">
+          <li class="list-personal-profile1"><a href="#about">About Me</a></li>
+          <li class="list-personal-profile2"><a href="#portfolio">Portfolio</a></li>
+          <li class="list-personal-profile3"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <main>
+
+    <main class="personal-profile">
       <section id="about">
         <h2>About Me</h2>
+        <img
+          src=".\Backgrounds\me.jpg"
+          alt="a cat with glasses on the PC"
+          class="right-image"
+        />
         <p>
           Hello! I'm Orna, a passionate web developer. I enjoy languages,
-          cultures and travelling.
+          cultures, and traveling.
         </p>
       </section>
 
       <section id="portfolio">
         <h2>Portfolio</h2>
+        <h3>My programming stack
+        languages</h3>
+   
+        <ul class="programming-stack-container">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+        <h4>Frameworks</h4>
+        <ul class="Frameworks-stack">
+          <li>React</li>
+          <li>Node js</li>
+        </ul>
+        <h5>Databases</h5>
+        <ul class="Databases-stack">
+          <li>MySql</li>
+          <li>MongoDB</li>
+        </ul>
+        <h6>Tools</h6>
+        <ul class="tools-stack">
+          <li>Git</li>
+          <li>AWS</li>
+        </ul>
+      </div>
         <p>Here are a few projects I've worked on:</p>
         <ul>
           <li>
@@ -51,12 +85,26 @@
       <section id="contact">
         <h2>Contact Me</h2>
         <p>
-          If you'd like to get in touch, feel free to reach out via email at xxx
-          or connect with me on [LinkedIn, Twitter, etc.].
+          If you'd like to get in touch, feel free to reach out via email at
+          <a href="mailto:kisinnr1@gmail.com">kisinnr1@gmail.com</a>
+          or connect with me on GitHub:
+          <a href="https://github.com/myNameisO-R">myNameisO-R</a>.
         </p>
       </section>
     </main>
-    
+
+    <footer>
+      <p>
+        <a href="https://www.vecteezy.com/free-vector/gray-texture-background"
+          >Gray Texture Background Vectors by Vecteezy</a
+        >
+      </p>
+      <p>&copy; 2025 Orna. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
+
+  
     
       </a>
     </footer>
@@ -117,10 +165,5 @@
           <circle cx="12" cy="12" r="10" />
         </svg>
       </a>
-    </footer>
-
-    <footer>
-      <p>&copy; 2024 Orna. All rights reserved.</p>
-    </footer>
   </body>
 </html>
