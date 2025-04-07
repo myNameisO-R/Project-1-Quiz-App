@@ -16,3 +16,8 @@ function toggleBookmark(event) {
     bookmark.textContent = "☆"; // outline star
   }
 }
+
+const toggleButton = document.getElementById("Toggle-button");
+toggleButton.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});

@@ -1,17 +1,10 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Personal Website</title>
-    <link rel="stylesheet" href="Components/styles.css" />
-    <style>
-      .container {
-        display: flex;
-        justify-content: space-between;
-        gap: 10px;
-        align-items: center;
-      }
-    </style>
+    <link rel="stylesheet" href="Components/styles.css"/>
   </head>
   <body class="personal-profile-body">
     <header>
@@ -24,7 +17,11 @@
         </ul>
       </nav>
     </header>
-
+    <div id= "container">
+      <p>Dark mode</p>
+      <button id="Toggle-button">Toggle Dark Mode</button>
+      </div>
+      <script src="script.js"></script>
     <main class="personal-profile">
       <section id="about">
         <h2>About Me</h2>
@@ -60,7 +57,7 @@
           <li>MongoDB</li>
         </ul>
         <h6>Tools</h6>
-        <ul class="tools-stack">
+        <ul class="Tools-stack">
           <li>Git</li>
           <li>AWS</li>
         </ul>
@@ -101,11 +98,7 @@
       </p>
       <p>&copy; 2025 Orna. All rights reserved.</p>
     </footer>
-  </body>
-</html>
-
-  
-    
+  </personal-profile-body>
       </a>
     </footer>
     <footer class="navbar">
@@ -165,5 +158,5 @@
           <circle cx="12" cy="12" r="10" />
         </svg>
       </a>
-  </body>
+
 </html>
