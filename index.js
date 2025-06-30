@@ -15,14 +15,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+const answerButtons = document.querySelectorAll(".card__answer");
+answerButtons.forEach((btn) => {
+  btn.addEventListener("click", toggleAnswer);
+});
 
 function toggleAnswer(event) {
-  const answerDiv = event.target.nextElementsSibling;
-  const isHidden = answerDiv.classList.togglt("hidden");
+  const answerDiv = event.target.nextElementSibling;
+  const isHidden = answerDiv.hasAttribute("hidden");
 
   if (isHidden) {
-    event.target.textcontent = "show Answer";
-  } else {
+    answerDiv.removeAttribute("hidden");
     event.target.textContent = "Hide Answer";
+  } else {
+    answerDiv.setAttribute("hidden", "");
+    event.target.textContent = "Show answer";
   }
 }
